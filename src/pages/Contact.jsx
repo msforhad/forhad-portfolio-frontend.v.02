@@ -37,11 +37,14 @@ const Contact = () => {
         setPhone('')
         setMessage('')
         toast.success(data.message)
+        console.log("data.success")
       }else{
+        console.log("data.not success")
         toast.error(data.message)
       }
       
     } catch (error) {
+      console.log("data error")
       toast.error(error.message)
       
     }
