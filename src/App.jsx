@@ -26,8 +26,8 @@ const App = ()=> {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="api/about" element={<About />} />
-        <Route path="api/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/:name" element={<ViewWorks />} />
