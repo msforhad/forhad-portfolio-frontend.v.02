@@ -7,7 +7,7 @@ const AppContext = createContext()
 
 const AppContextProvider = (props) => {
 
-  const backendUrl = "http://localhost:4000";
+  const backendUrl = "https://forhad-portfolio-backend.onrender.com";
 
   const [techSkilled, setTechSkilled] = useState(techSkillsData);
   const [techTools, setTechTools] = useState(techToolsData);
