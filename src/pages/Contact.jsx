@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { CgProfile } from "react-icons/cg";
 import { MdMessage } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -12,6 +12,7 @@ import { useState } from 'react';
 
 import { toast } from "react-toastify";
 import axios from "axios";
+import { AppContext } from '../context/AppContext';
 
 const Contact = () => {
   const [name,setName]=useState('')
@@ -19,13 +20,15 @@ const Contact = () => {
   const [phone,setPhone]=useState('')
   const [message,setMessage]=useState('')
 
+  const {backendUrl}=useContext(AppContext)
+
   
 
   const onSubmitHandler=async(event)=>{
     event.preventDefault()
+
     try {
-      const { data } = await axios.post(
-        "https://forhad-portfolio-backend-v-02.vercel.app/api/contact/send-message",
+      const { data } = await axios.post(`${backendUrl}/contact/send-message`,
         { name, email, phone, message },
         {
           withCredentials: true,
@@ -47,10 +50,8 @@ const Contact = () => {
       
     } catch (error) {
       console.log("data error")
-      toast.error(error.message)
-      
+      toast.error(error.message) 
     }
-
   }
   return (
     <div className="bg-primary">

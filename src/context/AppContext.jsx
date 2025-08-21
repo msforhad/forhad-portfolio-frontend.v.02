@@ -2,9 +2,12 @@ import { createContext, useEffect, useState } from 'react'
 import {techSkillsData, techToolsData,engToolsData,engSkillsData} from '../assets/SkillsData'
 
 
+
 const AppContext = createContext()
 
 const AppContextProvider = (props) => {
+
+  const backendUrl = "http://localhost:4000";
 
   const [techSkilled, setTechSkilled] = useState(techSkillsData);
   const [techTools, setTechTools] = useState(techToolsData);
@@ -55,6 +58,7 @@ const AppContextProvider = (props) => {
     setTechSkills,
     engSkills,
     setEngSkills,
+    backendUrl
   };
 
   return (
