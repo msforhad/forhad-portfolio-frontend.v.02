@@ -25,9 +25,11 @@ const Contact = () => {
     event.preventDefault()
     try {
       const { data } = await axios.post(
-        'https://forhad-portfolio-five.vercel.app/api/contact/send-message',{name,email,phone,message},{
-          withCredentials:true,
-          headers:{"Content-Type":"application/json"}
+        "https://forhad-portfolio-backend-v-02.vercel.app/api/contact/send-message",
+        { name, email, phone, message },
+        {
+          withCredentials: true,
+          headers: { "Content-Type": "application/json" },
         }
       );
 
