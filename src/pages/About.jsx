@@ -4,18 +4,18 @@ import Qualification from "../components/Qualification";
 const About = () => {
   return (
     <div className="bg-primary">
-      <div className="mx-2 md:mx-30 2xl:mx-40 grid grid-cols-1 md:grid-cols-[65%30%] gap-20 md:gap-5 py-20 md:py-30 ">
+      <div className="mx-2 md:mx-10 xl:mx-20 grid grid-cols-1 md:grid-cols-[65%30%] gap-20 md:gap-[5%] py-10 md:py-30 ">
         <div className="grid grid-cols-1 md:grid-cols-[20%75%] gap-5 items-center ">
-          <div className="flex md:flex-col items-center gap-15">
-            <p className="md:rotate-90 tracking-[4px] poppins font-semibold color-primary">
+          <div className="flex md:flex-col items-center md:gap-25 gap-2 color-primary">
+            <p className="md:rotate-90 tracking-[4px] poppins font-semibold">
               ABOUT ME
             </p>
-            <p className="border w-0 h-20 color-primary rotate-90 md:rotate-0"></p>
+            <p className="border px-10 color-primary md:rotate-90"></p>
           </div>
 
           <div className="flex flex-col gap-5 md:items-start items-center ">
             <div className="flex flex-col gap-5 ">
-              <p className="text-4xl font-black outfit color-primary tracking-widest">
+              <p className="text-3xl md:text-4xl font-black outfit color-primary tracking-widest">
                 Need a{" "}
                 <span className="text-orange-400">
                   Creative
@@ -50,6 +50,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
         <div className="">
           <img className="" src={assets} alt="" />
         </div>

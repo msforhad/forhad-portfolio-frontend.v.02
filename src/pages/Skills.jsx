@@ -9,6 +9,8 @@ const Skills = () => {
   const { engSkills, setEngSkills, techSkills, setTechSkills } =
     useContext(AppContext);
 
+    
+
 
   return (
     <div className="bg-primary">
@@ -39,28 +41,24 @@ const Skills = () => {
             </div>
 
             <div className="flex">
-              <div className="flex gap-5 items-center  bg-secondary rounded-full py-2.5 px-5 relative justify-center">
+              <div className="flex gap-5 items-center  bg-secondary rounded-full py-2.5 px-5 justify-center relative">
                 <button
                   onClick={() => setTechSkills("techSkills")}
-                  className={`${
-                    techSkills === "techSkills" ? "text-white" : ""
-                  } font-bold poppins z-10 color-primary`}
+                  className={` font-bold poppins color-primary z-10`}
                 >
                   Skills
                 </button>
 
                 <button
                   onClick={() => setTechSkills("techTools")}
-                  className={`${
-                    techSkills === "techTools" ? "text-white" : ""
-                  } font-bold poppins z-10 color-primary `}
+                  className={` font-bold poppins color-primary z-10 `}
                 >
                   Tools
                 </button>
                 <div
                   className={`${
                     techSkills === "techSkills" ? "left-[7px]" : "right-[9px]"
-                  } bg-orange-400 px-7 rounded-full py-1 text-orange-400 absolute z-0`}
+                  } bg-orange-400 px-7 rounded-full py-1 text-orange-400 absolute  z-0 `}
                 >
                   .
                 </div>
@@ -97,18 +95,14 @@ const Skills = () => {
               <div className="flex gap-5 items-center  bg-secondary rounded-full py-2.5 px-5 relative justify-center">
                 <button
                   onClick={() => setEngSkills("engSkills")}
-                  className={`${
-                    engSkills === "engSkills" ? "text-white" : ""
-                  } font-bold poppins z-10 color-primary`}
+                  className={`color-primary font-bold poppins  z-10`}
                 >
                   Skills
                 </button>
 
                 <button
                   onClick={() => setEngSkills("engTools")}
-                  className={`${
-                    engSkills === "engTools" ? "text-white" : ""
-                  } font-bold poppins z-10 color-primary`}
+                  className={`color-primary font-bold poppins z-10`}
                 >
                   Tools
                 </button>

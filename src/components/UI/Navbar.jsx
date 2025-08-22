@@ -10,15 +10,17 @@ import { IoMenu } from "react-icons/io5";
 
 
 const Navbar = () => {
+
   let [menuBtn,setMenuBtn]=useState(false)
   const {mode,setMode} =useContext(AppContext)
+
   return (
     <>
-      <header className="py-5 sticky top-0 bg-secondary z-10">
-        <div className="mx-2 md:mx-30 2xl:40 flex justify-between items-center">
+      <header className="py-5 sticky top-0 bg-secondary z-50">
+        <div className="mx-2 md:mx-10 lg:mx-20 2xl:60 flex justify-between items-center">
           {/* navbar logo */}
           <div>
-            <NavLink to="/" className="stencil text-4xl color-primary">
+            <NavLink to="/" className="stencil text-xl md:text-2xl 2xl:text-4xl color-primary">
               FORHAD<span className="text-orange-500">.</span>
             </NavLink>
           </div>
@@ -79,16 +81,16 @@ const Navbar = () => {
         <div
           className={`${
             menuBtn ? "translate-x-0" : "-translate-x-full"
-          } absolute justify-center bg-secondary  h-screen w-3/4 top-0 z-50`}
+          } fixed justify-center bg-secondary  h-screen w-3/4 left-0 top-0 z-[999]`}
         >
-          <ul className=" color-primary flex flex-col mt-60 gap-5 items-center w-full ">
+          <ul className=" color-primary flex flex-col gap-5 mt-40">
             <li
               className={`border-b ${
                 mode === "light" ? "border-gray-900" : "border-gray-100"
               } w-full flex justify-center mb-5`}
             >
               {" "}
-              <NavLink to="/" className="stencil text-4xl color-primary">
+              <NavLink to="/" className="stencil text-2xl color-primary">
                 FORHAD<span className="text-orange-500">.</span>
               </NavLink>
             </li>
@@ -96,7 +98,7 @@ const Navbar = () => {
             {["home", "about", "skills", "portfolio", "contact"].map(
               (nav, index) => (
                 <li
-                  className="poppins uppercase font-bold text-xl color-primary w-full flex justify-center"
+                  className="poppins uppercase font-bold text-lg color-primary w-full flex justify-center"
                   key={index}
                 >
                   <NavLink
