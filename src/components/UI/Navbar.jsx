@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <>
       <header className="py-5 sticky top-0 bg-secondary z-50">
-        <div className="mx-2 md:mx-10 lg:mx-20 2xl:60 flex justify-between items-center">
+        <div className="mx-2 md:mx-10 lg:mx-20 xl:mx-30 flex justify-between items-center">
           {/* navbar logo */}
           <div>
             <NavLink to="/" className="stencil text-xl md:text-2xl 2xl:text-4xl color-primary">
