@@ -8,9 +8,9 @@ import Contact from './Contact.jsx'
 import Portfolio from './Portfolio.jsx'
 
 const Home = () => {
-  // useEffect(()=>{
-  //   scrollTo({top:0,behavior:"smooth"})
-  // },[])
+  useEffect(()=>{
+    scrollTo({top:0,behavior:"smooth"})
+  },[])
   return (
     <>
     <section className='bg-primary'>
