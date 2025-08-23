@@ -47,7 +47,7 @@ const Qualification = () => {
           </div>
 
           <div className="flex gap-2 flex-col items-end poppins">
-            <p className="font-bold text-sm md:text-base xl:text-lg">
+            <p className="text-end font-bold text-sm md:text-base xl:text-lg">
               B.Sc. in Civil Engineering
             </p>
             <p className="color-secondary text-sm md:text-base xl:text-lg text-end">

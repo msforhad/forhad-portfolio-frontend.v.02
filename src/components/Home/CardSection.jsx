@@ -31,15 +31,15 @@ const cardData = [
         {cardData.map((card, i) => (
           <div
             key={i}
-            className="bg-secondary rounded p-10 shadow-md hover:scale-102 mx-15 md:mx-0 "
+            className="bg-secondary rounded p-10 mx-5 md:mx-0 shadow-md hover:scale-102 "
           >
-            <ul className="flex justify-between gap-6 items-center">
-              <li className=" text-3xl text-orange-500">
+            <ul className="flex gap-10 md:gap-5 items-center justify-center">
+              <li className=" text-2xl md:text-3xl  xl:text-4xl text-orange-500">
                 {card.icon}
               </li>
-              <li className="text-3xl font-black text-orange-500 poppins text-center">
+              <li className="text-2xl md:text-3xl xl:text-4xl font-black text-orange-500 poppins text-center">
                 {card.data} <br />
-                <span className="color-primary text-2xl md:text-2xl font-bold outfit">
+                <span className="color-primary text-lg md:text-xl xl:text-2xl font-bold outfit">
                   {card.title}
                 </span>
               </li>

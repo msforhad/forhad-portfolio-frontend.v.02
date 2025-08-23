@@ -1,8 +1,11 @@
 import { useEffect } from "react";
 import assets from "../assets/image/logo-2xl.png";
 import Qualification from "../components/Qualification";
+import { useNavigate } from "react-router-dom";
+import Profile from '../assets/image/Profile.pdf'
 
 const About = () => {
+  const navigate = useNavigate()
   useEffect(()=>{
     scrollTo({top:5,behavior:'smooth'})
   },[])
@@ -44,13 +47,20 @@ const About = () => {
             </div>
 
             <div className="flex flex-row justify-end gap-5 items-start">
-              <button className="text-sm md:text-base xl:text-lg py-2 px-4 rounded bg-orange-500 text-white hover:bg-orange-300 font-bold">
+              <button
+                onClick={() => navigate("/contact")}
+                className="text-sm md:text-base xl:text-lg py-2 px-4 rounded bg-orange-500 text-white hover:bg-orange-300 font-bold"
+              >
                 HIRE ME
               </button>
 
-              <button className="text-sm md:text-base xl:text-lg py-2 px-4 rounded hover:bg-cyan-500 hover:text-white text-slate-600 bg-white font-bold">
+              <a
+                href={Profile}
+                download="MyPortfolio.pdf"
+                className="text-sm md:text-base xl:text-lg py-2 px-4 rounded hover:bg-cyan-500 hover:text-white text-slate-600 bg-white font-bold"
+              >
                 DOWNLOAD CV
-              </button>
+              </a>
             </div>
           </div>
         </div>

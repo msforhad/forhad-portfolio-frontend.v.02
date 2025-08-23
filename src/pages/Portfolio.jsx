@@ -19,11 +19,11 @@ const Portfolio = () => {
       <div className="mx-2 md:mx-10 lg:mx-20 xl:30  py-20">
         <div className="columns-1 md:columns-3 gap-5 ">
           <div className="mb-5 grid md:grid-cols-[30%70%] aspect-auto justify-items-start ">
-            <div className="color-primary flex md:flex-col gap-5 md:gap-15 justify-center ">
+            <div className="color-secondary flex flex-row md:flex-col items-center  gap-2 md:gap-8 justify-center">
               <p className="md:rotate-90 outfit text-sm md:text-base xl:text-lg ">
                 My Work
               </p>
-              <p className="border rotate-90"></p>
+              <p className="border h-0 md:h-15 w-15 md:w-0"></p>
             </div>
 
             <div className="color-primary flex flex-col gap-5 ">
