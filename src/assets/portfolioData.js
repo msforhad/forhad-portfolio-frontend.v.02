@@ -1,16 +1,8 @@
-import p1 from './image/p-1.jpg'
-import p2 from './image/p-2.jpg'
-import p3 from './image/p-3.jpg'
-import p4 from './image/p-4.jpg'
-import p5 from './image/p-5.jpg'
-import p6 from './image/p-6.jpg'
-import p7 from './image/p-7.jpg'
-import p8 from './image/p-8.jpg'
-import p9 from './image/p-9.jpg'
-import p10 from './image/p-10.jpg'
 
+import website01 from '../assets/image/website01.png'
+import screenShot0101 from '../assets/image/screenShot0101.png'
 export const images = [
-  p1,p2,p3,p4,p5,p6,p7,p8,p9,p10
+  
 ]
 
 
@@ -32,80 +24,114 @@ export const myWorks = [
     name:'Radiant',
     technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
     shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p1,
+    image:website01,
     longDescription: longDescription,
-    screenshots:[p1,p2,p3,p4]
+    screenshots:[website01,screenShot0101]
   },
-  {
-    name:'Project Two',
+    {
+    name:'Radiant',
     technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
     shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p2,
+    image:website01,
     longDescription: longDescription,
-    screenshots:[p2]
+    screenshots:[website01,screenShot0101]
   },
-  {
-    name:'Project Three',
+
+    {
+    name:'Radiant',
     technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
     shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p3,
+    image:website01,
     longDescription: longDescription,
-    screenshots:[p3]
+    screenshots:[website01,screenShot0101]
   },
-  {
-    name:'Project Four',
+
+    {
+    name:'Radiant',
     technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
     shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p4,
+    image:website01,
     longDescription: longDescription,
-    screenshots:[p4],
+    screenshots:[website01,screenShot0101]
   },
-  {
-    name:'Project Five',
+    {
+    name:'Radiant',
     technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
     shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p5,
+    image:website01,
     longDescription: longDescription,
-    screenshots:[p5],
+    screenshots:[website01,screenShot0101]
   },
-  {
-    name:'Project Six',
-    technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
-    shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p6,
-    longDescription: longDescription,
-    screenshots:[p6],
-  },
-  {
-    name:'Project Seven',
-    technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
-    shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p7,
-    longDescription: longDescription,
-    screenshots:[p7],
-  },
-  {
-    name:'Project Eight',
-    technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
-    shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p8,
-    longDescription: longDescription,
-    screenshots:[p8],
-  },
-  {
-    name:'Project Nine',
-    technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
-    shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p9,
-    longDescription: longDescription,
-    screenshots:[p9],
-  },
-  {
-    name:'Project Ten',
-    technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
-    shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
-    image:p10,
-    longDescription: longDescription,
-    screenshots:[p10],
-  }
+  // {
+  //   name:'Project Two',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p2,
+  //   longDescription: longDescription,
+  //   screenshots:[p2]
+  // },
+  // {
+  //   name:'Project Three',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p3,
+  //   longDescription: longDescription,
+  //   screenshots:[p3]
+  // },
+  // {
+  //   name:'Project Four',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p4,
+  //   longDescription: longDescription,
+  //   screenshots:[p4],
+  // },
+  // {
+  //   name:'Project Five',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p5,
+  //   longDescription: longDescription,
+  //   screenshots:[p5],
+  // },
+  // {
+  //   name:'Project Six',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p6,
+  //   longDescription: longDescription,
+  //   screenshots:[p6],
+  // },
+  // {
+  //   name:'Project Seven',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p7,
+  //   longDescription: longDescription,
+  //   screenshots:[p7],
+  // },
+  // {
+  //   name:'Project Eight',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p8,
+  //   longDescription: longDescription,
+  //   screenshots:[p8],
+  // },
+  // {
+  //   name:'Project Nine',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p9,
+  //   longDescription: longDescription,
+  //   screenshots:[p9],
+  // },
+  // {
+  //   name:'Project Ten',
+  //   technology: ['MongoDb','ReactJs','NodeJs','Express','TailwindCSS'],
+  //   shortDescription:'We originally designed this for a SaaS we were going to build ourselves, but by the time we were done, we were over that idea. So we turned it into a template for you instead.',
+  //   image:p10,
+  //   longDescription: longDescription,
+  //   screenshots:[p10],
+  // }
 ]

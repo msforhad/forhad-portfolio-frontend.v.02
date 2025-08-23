@@ -47,7 +47,7 @@ const ViewWorks = () => {
       <div className="px-2 md:px-10 xl:px-30">
         <div className="p-5 border-l border-r border-primary">
           <img
-            className="aspect-3/2 object-cover rounded"
+            className="aspect-auto object-cover rounded"
             src={work.image}
             alt=""
           />
@@ -92,7 +92,7 @@ const ViewWorks = () => {
             {work.screenshots.map((data, index) => (
               <img
               key={index}
-                className="mb-5 rounded aspect-3/2 object-cover"
+                className="mb-5 rounded aspect-auto object-cover"
                 src={data}
                 alt=""
               />

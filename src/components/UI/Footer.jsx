@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <footer className=" bg-secondary ">
         <div className=" flex flex-col justify-center items-center  ">
-            <p className="color-secondary py-20 md:py-10">
+            <p className="color-secondary py-10">
               © 2025 forhad. All rights reserved
             </p>
         </div>
