@@ -10,7 +10,7 @@ import Portfolio from './Portfolio.jsx'
 const Home = () => {
   useEffect(()=>{
     scrollTo({top:0,behavior:"smooth"})
-  })
+  },[])
   return (
     <>
     <section className='bg-primary'>

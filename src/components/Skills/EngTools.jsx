@@ -5,12 +5,17 @@ const EngTools = () => {
    const { engTools } = useContext(AppContext);
   return (
     <div>
-      <div className='flex justify-center'>
-        <ul className="grid grid-flow-col md:grid-cols-4 gap-3">
+      <div>
+        <ul className="flex flex-wrap justify-center gap-3">
           {engTools.map((data, index) => (
-            <li key={index} className="bg-secondary p-5 rounded color-primary flex flex-col items-center gap-1">
-              <p className="text-2xl">{data.icon}</p>
-              <p className='text-xs'>{data.level}</p>
+            <li
+              key={index}
+              className="bg-secondary px-6 py-4 rounded color-primary flex flex-col items-center gap-1 justify-center"
+            >
+              <p className="font-bold text-sm md:text-base xl:text-lg">
+                {data.icon}
+              </p>
+              <p className="text-xs md:text-sm xl:text-base">{data.level}</p>
             </li>
           ))}
         </ul>

@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import assets from "../assets/image/logo-2xl.png";
 import Qualification from "../components/Qualification";
 
 const About = () => {
+  useEffect(()=>{
+    scrollTo({top:5,behavior:'smooth'})
+  },[])
   return (
     <div className="bg-primary">
       <div className=" mx-2 md:mx-10 lg:mx-20 xl:mx-30 grid grid-cols-1 md:grid-cols-[65%30%] gap-20 md:gap-[5%] py-10 md:py-30 ">

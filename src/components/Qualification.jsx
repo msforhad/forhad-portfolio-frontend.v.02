@@ -19,7 +19,7 @@ const Qualification = () => {
       </div>
 
       <div className="grid grid-cols-[46%6%46%] gap-[2%] ">
-        <div className=" flex flex-col gap-35 lg:gap-30 xl:gap-26 ml-10">
+        <div className=" flex flex-col gap-35 lg:gap-30 xl:gap-26">
           <div className="flex gap-2 flex-col items-end poppins">
             <p className="font-bold text-sm md:text-base xl:text-lg">
               SSC in Science
@@ -47,7 +47,9 @@ const Qualification = () => {
           </div>
 
           <div className="flex gap-2 flex-col items-end poppins">
-            <p className="font-bold">B.Sc. in Civil Engineering</p>
+            <p className="font-bold text-sm md:text-base xl:text-lg">
+              B.Sc. in Civil Engineering
+            </p>
             <p className="color-secondary text-sm md:text-base xl:text-lg text-end">
               Sylhet Engineering College
             </p>

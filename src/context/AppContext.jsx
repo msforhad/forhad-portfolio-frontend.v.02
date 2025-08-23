@@ -1,5 +1,7 @@
 import { createContext, useEffect, useState } from 'react'
 import {techSkillsData, techToolsData,engToolsData,engSkillsData} from '../assets/SkillsData'
+import { myWorks } from '../assets/portfolioData.js';
+
 
 
 
@@ -13,6 +15,8 @@ const AppContextProvider = (props) => {
   const [techTools, setTechTools] = useState(techToolsData);
   const [engSkilled, setEngSkilled] = useState(engToolsData);
   const [engTools, setEngTools] = useState(engSkillsData);
+
+  const [myWork,setMyWork]=useState(myWorks)
 
  // techSkills control
     const [techSkills, setTechSkills] = useState(()=>{
@@ -58,7 +62,9 @@ const AppContextProvider = (props) => {
     setTechSkills,
     engSkills,
     setEngSkills,
-    backendUrl
+    backendUrl,
+    myWork,
+    setMyWork,
   };
 
   return (

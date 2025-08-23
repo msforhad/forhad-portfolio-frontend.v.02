@@ -6,12 +6,17 @@ const TechTools = () => {
   return (
     <div>
       <div>
-        <ul className="grid grid-cols-3 md:grid-cols-4 gap-3 justify-center">
+        <ul className="flex flex-wrap  gap-2 justify-center">
           {techTools.map((data, index) => (
-            <li key={index} className="bg-secondary p-5 rounded gap-1 flex flex-col items-center color-primary">
-              <p className="text-3xl">{data.icon}</p>
-              <p className='font-bold'>{data.name}</p>
-              <p className='text-xs'>{data.level}</p>
+            <li
+              key={index}
+              className="bg-secondary px-6 py-4 rounded gap-1 flex flex-col items-center justify-center color-primary outfit"
+            >
+              <p className="text-3xl md:text-4xl xl:text-5xl">{data.icon}</p>
+              <p className="font-bold text-sm md:text-base xl:text-lg">
+                {data.name}
+              </p>
+              <p className="text-xs md:text-sm xl:text-base">{data.level}</p>
             </li>
           ))}
         </ul>

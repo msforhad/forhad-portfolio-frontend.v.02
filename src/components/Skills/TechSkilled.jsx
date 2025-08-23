@@ -6,13 +6,13 @@ const TechSkilled = () => {
   return (
     <div>
       <div>
-        <ul className='grid grid-cols-3 md:grid-cols-4 gap-3'>
+        <ul className='flex flex-wrap gap-3 justify-center'>
           {
             techSkilled.map((data,index)=>(
-              <li key={index} className='bg-secondary p-5 rounded flex flex-col items-center gap-1 color-primary'>
-                <p className='text-4xl'>{data.icon}</p>
-                <p className='font-bold'>{data.name}</p>
-                <p className='text-xs'>{data.level}</p>
+              <li key={index} className='bg-secondary px-6 py-4 rounded flex flex-col items-center justify-center gap-1 color-primary outfit'>
+                <p className='text-3xl md:text-4xl xl:text-5xl'>{data.icon}</p>
+                <p className='font-bold text-sm md:text-base xl:text-lg'>{data.name}</p>
+                <p className='text-xs md:text-sm xl:text-base'>{data.level}</p>
               </li>
             ))
           }
